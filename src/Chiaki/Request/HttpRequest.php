@@ -2,6 +2,8 @@
 
 namespace Chiaki\Request;
 
+use Chiaki\Uri\IHttpUri;
+
 /*
  * This file is part of the chiaki package.
  * Copyright (c) 2012 olamedia <olamedia@gmail.com>

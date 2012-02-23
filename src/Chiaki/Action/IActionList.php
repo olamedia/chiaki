@@ -14,4 +14,5 @@ namespace Chiaki\Action;
 
 interface IActionList extends IAction{
 	public function addAction(IAction $action);
+	public function isEmpty();
 }

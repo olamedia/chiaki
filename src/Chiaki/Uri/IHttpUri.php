@@ -20,6 +20,7 @@ interface IHttpUri extends IUri{
     public function getPort();
     public function getPath();
     public function getSegment($index);
+	public function getRelativePath(IHttpUri $baseUri);
 	public function getRelativeSegment(IHttpUri $baseUri, $index);
     /**
      * @abstract

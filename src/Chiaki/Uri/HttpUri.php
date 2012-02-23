@@ -60,4 +60,12 @@ class HttpUri implements IHttpUri{
 	public function getScheme() {
 		// TODO: Implement getScheme() method.
 	}
+
+	public function getRelativePath(IHttpUri $baseUri) {
+		// TODO: Implement getRelativePath() method.
+	}
+
+	public function getRelativeSegment(IHttpUri $baseUri, $index) {
+		// TODO: Implement getRelativeSegment() method.
+	}
 }
