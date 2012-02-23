@@ -10,15 +10,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Chiaki\Controller;
+namespace Chiaki\Router;
 
-use Chiaki\IoC\IContainerAware;
+use Chiaki\Controller\IController;
 
-
-interface IController extends IContainerAware{
-	/**
-	 * @abstract
-	 * @return \Chiaki\Router\IRouter
-	 */
-	public function getRouter();
+interface IControllerRouter{
+	public function setController(IController $controller);
 }

@@ -15,5 +15,10 @@ namespace Chiaki\Router;
 use Chiaki\Request\IRequest;
 
 interface IRouter{
-    public function resolve(IRequest $request);
+	/**
+	 * @abstract
+	 * @param \Chiaki\Request\IRequest $request
+	 * @return \Chiaki\Action\IAction
+	 */
+   /* public function resolve($request);*/
 }

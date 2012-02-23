@@ -12,8 +12,18 @@
 
 namespace Chiaki\Router;
 
+use Chiaki\Request\IHttpRequest;
+use Chiaki\Uri\IHttpUri;
+
 /**
  * Router for HTTP request.
  */
 interface IHttpRouter extends IRouter{
+	public function setBaseUri(IHttpUri $uri);
+	/**
+	 * @abstract
+	 * @param \Chiaki\Request\IHttpRequest $request
+	 * @return \Chiaki\Action\IAction
+	 */
+	public function resolve(IHttpRequest $request);
 }

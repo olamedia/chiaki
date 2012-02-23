@@ -2,6 +2,8 @@
 
 namespace Chiaki\Request;
 
+use Chiaki\Uri\IHttpUri;
+
 /*
  * This file is part of the chiaki package.
  * Copyright (c) 2012 olamedia <olamedia@gmail.com>
@@ -12,6 +14,10 @@ namespace Chiaki\Request;
  * file that was distributed with this source code.
  */
 interface IHttpRequest extends IRequest {
+	/**
+	 * @abstract
+	 * @return \Chiaki\Uri\IHttpUri
+	 */
 	public function getUri();
 	public function getMethod();
 	/**

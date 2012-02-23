@@ -10,15 +10,8 @@
  * file that was distributed with this source code.
  */
 
-namespace Chiaki\Controller;
+namespace Chiaki\Path;
 
-use Chiaki\IoC\IContainerAware;
-
-
-interface IController extends IContainerAware{
-	/**
-	 * @abstract
-	 * @return \Chiaki\Router\IRouter
-	 */
-	public function getRouter();
+interface IPath {
+	public function getSegment($index);
 }
